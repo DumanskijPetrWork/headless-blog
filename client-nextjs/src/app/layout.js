@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import '@/styles/styles.scss';
 import { Lato, Open_Sans } from 'next/font/google';
@@ -24,6 +25,7 @@ const RootLayout = ({ children }) => (
 		>
 			<Header />
 			{children}
+			<Footer />
 		</body>
 	</html>
 );
