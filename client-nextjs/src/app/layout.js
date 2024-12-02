@@ -1,3 +1,4 @@
+import Header from '@/components/header';
 import '@/styles/styles.scss';
 import { Lato, Open_Sans } from 'next/font/google';
 
@@ -21,6 +22,7 @@ const RootLayout = ({ children }) => (
 		<body
 			className={`${openSans.className} ${openSans.variable} ${lato.variable}`}
 		>
+			<Header />
 			{children}
 		</body>
 	</html>
