@@ -1,4 +1,13 @@
-// paddings
+// MARGINS
+$marginBottom: (30);
+
+@each $mb in $marginBottom {
+	.mb-#{$mb} {
+		margin-bottom: #{$mb}px;
+	}
+}
+
+// PADDINGS
 $paddingTop: (80);
 $paddingBottom: (80);
 
