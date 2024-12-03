@@ -18,7 +18,7 @@ const Home = () => (
 		<div className='row'>
 			<div className='col col_4'>
 				<Card
-					label={'Product Reviews'}
+					label={'Opinions'}
 					title={
 						'Class aptent taciti sociosqu ad litora torquent per conubia nostra'
 					}
@@ -44,7 +44,7 @@ const Home = () => (
 			</div>
 			<div className='col col_4'>
 				<Card
-					label={'Product Reviews'}
+					label={'Travel Guides'}
 					title={
 						'Class aptent taciti sociosqu ad litora torquent per conubia nostra'
 					}

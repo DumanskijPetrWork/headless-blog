@@ -1,3 +1,4 @@
+import getCategoryColor from '@/helpers/get-category-color';
 import Image from 'next/image';
 import Button from '../button/button';
 import styles from './card.module.scss';
@@ -24,7 +25,11 @@ const Card = ({
 			</div>
 			<div className={styles.card__content}>
 				{label && (
-					<div className={`${styles.card__label} h6 mb-10 c-orange`}>
+					<div
+						className={`${
+							styles.card__label
+						} h6 mb-10 c-${getCategoryColor(label)}`}
+					>
 						{label}
 					</div>
 				)}
