@@ -16,8 +16,9 @@ const Home = () => (
 			btnIcon={IconTypes.ARROW_RIGHT}
 		/>
 		<div className='row'>
-			<div className='col col_4'>
+			<div className='col col_4 m-mw-100'>
 				<Card
+					className='mb-30'
 					label={'Opinions'}
 					title={
 						'Class aptent taciti sociosqu ad litora torquent per conubia nostra'
@@ -29,8 +30,9 @@ const Home = () => (
 					btnIcon={IconTypes.ARROW_RIGHT}
 				/>
 			</div>
-			<div className='col col_4'>
+			<div className='col col_4 m-mw-100'>
 				<Card
+					className='mb-30'
 					label={'Product Reviews'}
 					title={
 						'Class aptent taciti sociosqu ad litora torquent per conubia nostra'
@@ -42,8 +44,9 @@ const Home = () => (
 					btnIcon={IconTypes.ARROW_RIGHT}
 				/>
 			</div>
-			<div className='col col_4'>
+			<div className='col col_4 m-mw-100'>
 				<Card
+					className='mb-30'
 					label={'Travel Guides'}
 					title={
 						'Class aptent taciti sociosqu ad litora torquent per conubia nostra'
