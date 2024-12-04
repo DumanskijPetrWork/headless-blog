@@ -8,6 +8,8 @@ const Card = ({
 	label,
 	title,
 	summary,
+	imgSrc,
+	imgAlt = '',
 	href,
 	btnIcon,
 	btnLabel = 'Read More',
@@ -16,11 +18,7 @@ const Card = ({
 		<div className={styles.card}>
 			<div className={styles.card__imageWrap}>
 				<div className={styles.card__image}>
-					<Image
-						src='/thumb-grid-1.jpg'
-						alt='thumbnail'
-						fill={true}
-					/>
+					<Image src={imgSrc} alt={imgAlt} fill sizes='screen 100%' />
 				</div>
 			</div>
 			<div className={styles.card__content}>
