@@ -1,10 +1,11 @@
+@use "sass:meta";
 @import "normalize.css/normalize.css";
-@import "global.scss";
-@import "grid.scss";
-@import "typography.scss";
-@import "hr.scss";
+@include meta.load-css("global.scss");
+@include meta.load-css("grid.scss");
+@include meta.load-css("typography.scss");
+@include meta.load-css("hr.scss");
 
-@import "utils/spacings.scss";
-@import "utils/colors.scss";
-@import "utils/fonst.scss";
-@import "utils/widths.scss";
+@include meta.load-css("utils/spacings.scss");
+@include meta.load-css("utils/colors.scss");
+@include meta.load-css("utils/fonst.scss");
+@include meta.load-css("utils/widths.scss");
