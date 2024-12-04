@@ -19,7 +19,7 @@
 $columns: 12;
 @for $i from 1 through $columns {
 	.col_#{$i} {
-		$width: (100% / $columns) * $i;
+		$width: calc(100% / $columns) * $i;
 		min-width: $width;
 		max-width: $width;
 	}
