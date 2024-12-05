@@ -1,13 +1,13 @@
 .card {
+	&__wrap {
+		container-type: inline-size;
+	}
+
 	display: flex;
 	gap: 30px;
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 6px 7px 21px rgba($color: #000, $alpha: 0.07);
-
-	&__wrap {
-		container-type: inline-size;
-	}
 
 	&__imageWrap,
 	&__content {
@@ -37,6 +37,14 @@
 	.card {
 		flex-direction: column;
 
+		&__wrap {
+			flex: 1;
+		}
+
+		&__imageWrap {
+			flex: 0;
+		}
+
 		&__content {
 			padding: 0 30px 30px;
 		}
@@ -46,6 +54,7 @@
 		}
 
 		&__title {
+			flex: 1;
 			font-size: 24px;
 		}
 
