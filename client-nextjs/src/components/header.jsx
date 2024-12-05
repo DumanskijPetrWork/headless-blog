@@ -1,7 +1,11 @@
+import Link from 'next/link';
+
 const Header = () => (
 	<header className='pt-80 pb-80'>
 		<div className='container'>
-			<div className='h1'>Headless Blog</div>
+			<Link href={'/'}>
+				<div className='h1'>Headless Blog</div>
+			</Link>
 		</div>
 	</header>
 );
