@@ -8,6 +8,46 @@ p {
 	line-height: 1.66;
 }
 
+a {
+	text-decoration: none;
+}
+
+$decoration-color: #d4d4d4;
+
+a.anchor,
+*:has(> .anchor) {
+	text-decoration: underline;
+	text-decoration-color: rgba($color: $decoration-color, $alpha: 0);
+	text-underline-offset: 0.5rem;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration-color: rgba($color: $decoration-color, $alpha: 1);
+	}
+}
+
+a.anchor {
+	position: absolute;
+	opacity: 0;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	width: 80%;
+	max-width: 700px;
+	color: $decoration-color;
+
+	&::after {
+		content: "#";
+		text-decoration: underline;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
 h1,
 .h1,
 h2,
